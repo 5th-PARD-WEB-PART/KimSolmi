@@ -18,11 +18,7 @@ Netlify를 통해 배포하여 누구나 볼 수 있도록 공유합니다. 🚀
 
 🚀 **Netlify로 배포하기**  
 Netlify를 활용하면 쉽게 배포할 수 있습니다!  
-아래 링크를 클릭하여 배포된 페이지를 확인하세요.
-
-🔗 [내 자기소개 페이지 보러 가기](https://your-netlify-link.netlify.app)
-
----
+but 빌드에러 이슈로 배포는 못 했습니다. 
 
 📸 **페이지 미리보기**  
 <img src="./public/forreademe.png" width="400"/>
