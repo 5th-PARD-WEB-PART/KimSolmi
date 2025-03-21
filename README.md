@@ -25,4 +25,4 @@ Netlify를 활용하면 쉽게 배포할 수 있습니다!
 ---
 
 📸 **페이지 미리보기**  
-<img src="./images/forreadme.png" width="400"/>
+<img src="./public/forreademe.png" width="400"/>
