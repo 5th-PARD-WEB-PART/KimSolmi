@@ -1,6 +1,5 @@
 import { create } from 'zustand'
 
-
 type UserState = {
     name: string 
     age: number
