@@ -1,0 +1,302 @@
+.container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .sidebar {
+    width: 220px;
+    border-right: 1px solid #262626;
+    padding: 20px 0;
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logoArea {
+    padding: 0 12px;
+    margin-bottom: 24px;
+  }
+  
+  .logo {
+    width: 103px;
+  }
+  
+  .menu {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menuItem {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    margin-bottom: 4px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  .menuItem:hover {
+    background-color: #1a1a1a;
+  }
+  
+  .icon {
+    margin-right: 16px;
+    font-size: 24px;
+  }
+  
+  .menuText {
+    font-size: 16px;
+  }
+  
+  .sidebarBottom {
+    margin-top: auto;
+    padding-bottom: 20px;
+  }
+  
+  .main {
+    flex-grow: 1;
+    margin-left: 220px;
+    padding: 30px;
+  }
+  
+  .profileHeader {
+    display: flex;
+    margin-bottom: 44px;
+  }
+  
+  .profileImage {
+    margin-right: 30px;
+    flex-shrink: 0;
+  }
+  
+  .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #262626;
+    overflow: hidden;
+  }
+  
+  .avatarImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .profileInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .profileNameRow {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .username {
+    font-size: 20px;
+    font-weight: 400;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+  
+  .editProfileButton {
+    background-color: transparent;
+    border: 1px solid #262626;
+    border-radius: 4px;
+    color: #fff;
+    padding: 5px 9px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .editProfileButton:hover {
+    background-color: #1a1a1a;
+  }
+  
+  .profileStats {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .stat {
+    margin-right: 40px;
+    font-size: 16px;
+  }
+  
+  .profileContent {
+    border-top: 1px solid #262626;
+    padding-top: 10px;
+  }
+  
+  .profileGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4px;
+  }
+  
+  .gridItem {
+    aspect-ratio: 1/1;
+    background-color: #262626;
+    overflow: hidden;
+  }
+  
+  .gridImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modalContent {
+    display: flex;
+    background-color: black;
+    width: 900px;
+    height: 600px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .modalImageContainer {
+    flex: 1;
+    background-color: black;
+  }
+  
+  .modalImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .modalRight {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 1px solid #ddd;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .modalHeader {
+    padding: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #333;
+  }
+  
+  .commentList {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+    border-bottom: 1px solid #333;
+  }
+  
+  .commentItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  .commentItem:first-child {
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 6px;
+  }
+  
+  .commentProfileIcon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-right: 8px;
+    object-fit: cover;
+  }
+  
+  .modalFooter {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .likeSection {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .likeButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .commentInputWrapper {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .commentInput {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #555;
+    border-radius: 6px;
+    background-color: #111;
+    color: white;
+  }
+  
+  .commentButton {
+    padding: 8px 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .commentButton:disabled {
+    color: #777;
+    background-color: #222;
+    cursor: default;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: grey;
+    cursor: pointer;
+  }
+  
