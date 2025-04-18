@@ -299,3 +299,89 @@
   color: grey;
   cursor: pointer;
 }
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sectionDescription {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileImageEditContainer {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+  align-self: flex-start;
+}
+
+.sectionDescription {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.editForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  
+}
+
+.profileImageEditContainer {
+  background-color: #1c1c1c;
+  padding: 20px 24px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.inputField {
+  background-color: transparent;
+  border: 1px solid #888;
+  border-radius: 4px;
+  padding: 8px 12px;
+  color: #fff;
+  font-size: 16px;
+  width: 200px;
+  text-align: left;
+}
+
+
+.submitButton {
+  background-color: #6C63FF;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  font-size: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.submitButton:hover {
+  background-color: #594ce0;
+}

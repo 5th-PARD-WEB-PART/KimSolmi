@@ -1,10 +1,10 @@
 import React from 'react';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
-import styles from '../styles/Register.module.css';
+import styles from '../styles/register.module.css';
 import { useUserStore } from '../stores/userStore';
 
-export default function RegisterPage() {
+export default function registerpage() {
   const router = useRouter();
   const {
     phoneOrEmail,
@@ -16,6 +16,13 @@ export default function RegisterPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    // ✅ 입력값 필수 확인
+    if (!phoneOrEmail || !fullName || !userName || !password) {
+      alert('모든 필드를 입력해주세요.');
+      return;
+    }
+
     console.log('가입 정보:', { phoneOrEmail, fullName, userName, password });
     router.push('/mypage');
   };

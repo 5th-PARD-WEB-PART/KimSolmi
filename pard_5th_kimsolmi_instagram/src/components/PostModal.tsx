@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/MyPage.module.css';
+import styles from '../styles/mypage.module.css';
 import { FaHeart, FaRegHeart, FaComment, FaShare } from 'react-icons/fa';
 
 interface PostModalProps {

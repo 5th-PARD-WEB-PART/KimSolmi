@@ -6,7 +6,7 @@ export default function Home() {
   const router = useRouter();
   
   useEffect(() => {
-    router.push('/RegisterPage');
+    router.push('/registerpage');
   }, []);
   
   return null;

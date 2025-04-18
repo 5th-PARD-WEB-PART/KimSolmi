@@ -34,3 +34,6 @@
 RegisterPage에서 입력한 Name을 mypage에서 프로필 이름으로 값 가지고 옴
 
 실행결과 :
+
+파일 경로 : 
+![alt text](image-7.png)

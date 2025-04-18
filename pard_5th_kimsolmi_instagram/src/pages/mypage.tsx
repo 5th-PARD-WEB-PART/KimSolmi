@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
-import styles from '../styles/MyPage.module.css';
+import styles from '../styles/mypage.module.css';
 import PostModal from '../components/PostModal';
-import { useUserStore } from '../stores/userStore'; // ✅ Zustand import
+import { useUserStore } from '../stores/userStore'; 
 
 import {
   FaHome,
@@ -14,9 +14,9 @@ import {
   FaBars,
 } from 'react-icons/fa';
 
-export default function MyPage(): JSX.Element {
-  const { userName } = useUserStore(); // ✅ 닉네임 가져오기
-  const router = useRouter(); // ✅ 라우터 초기화
+export default function mypage(): JSX.Element {
+  const { userName } = useUserStore(); 
+  const router = useRouter();
 
   const postImages: string[] = [
     '/animal.png',
@@ -65,7 +65,7 @@ export default function MyPage(): JSX.Element {
 
   return (
     <div className={styles.container}>
-      {/* 사이드바 */}
+  
       <aside className={styles.sidebar}>
         <div className={styles.logoArea}>
           <img src="/Company-logo.png" alt="Logo" className={styles.logo} />
@@ -110,7 +110,7 @@ export default function MyPage(): JSX.Element {
         </nav>
       </aside>
 
-      {/* 메인 프로필 */}
+
       <main className={styles.main}>
         <div className={styles.profileHeader}>
           <div className={styles.profileImage}>
@@ -123,20 +123,20 @@ export default function MyPage(): JSX.Element {
               <h2 className={styles.username}>{userName || '사용자'}</h2>
               <button
                 className={styles.editProfileButton}
-                onClick={() => router.push('/infoedit')} // ✅ 이동 처리
+                onClick={() => router.push('/infoeditpage')} 
               >
                 프로필 편집
               </button>
             </div>
             <div className={styles.profileStats}>
-              <span className={styles.stat}>게시물 5</span>
-              <span className={styles.stat}>팔로워 1432</span>
+              <span className={styles.stat}>게시물 9</span>
+              <span className={styles.stat}>팔로워 9999</span>
               <span className={styles.stat}>팔로우 0</span>
             </div>
           </div>
         </div>
 
-        {/* 피드 목록 */}
+
         <div className={styles.profileContent}>
           <div className={styles.profileGrid}>
             {postImages.map((src, idx) => (
@@ -152,7 +152,7 @@ export default function MyPage(): JSX.Element {
         </div>
       </main>
 
-      {/* 모달 */}
+      
       {isModalOpen && selectedPost && (
         <PostModal
           selectedPost={selectedPost}
