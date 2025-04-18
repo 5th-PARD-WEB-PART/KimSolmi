@@ -1,5 +1,6 @@
 
-<details 파드 3차 과제 >
+<details >
+  <summary>파드 3차 과제</summary>
 
 4월 11일 금요일까지
 
