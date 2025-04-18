@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
+import { useRouter } from 'next/router';
 import styles from '../styles/MyPage.module.css';
-import PostModal from '../components/PostModal'; // 모달 컴포넌트 import
+import PostModal from '../components/PostModal';
+import { useUserStore } from '../stores/userStore'; // ✅ Zustand import
 
 import {
   FaHome,
@@ -13,6 +15,9 @@ import {
 } from 'react-icons/fa';
 
 export default function MyPage(): JSX.Element {
+  const { userName } = useUserStore(); // ✅ 닉네임 가져오기
+  const router = useRouter(); // ✅ 라우터 초기화
+
   const postImages: string[] = [
     '/animal.png',
     '/devweb.png',
@@ -115,8 +120,13 @@ export default function MyPage(): JSX.Element {
           </div>
           <div className={styles.profileInfo}>
             <div className={styles.profileNameRow}>
-              <h2 className={styles.username}>thisissolmi</h2>
-              <button className={styles.editProfileButton}>프로필 편집</button>
+              <h2 className={styles.username}>{userName || '사용자'}</h2>
+              <button
+                className={styles.editProfileButton}
+                onClick={() => router.push('/infoedit')} // ✅ 이동 처리
+              >
+                프로필 편집
+              </button>
             </div>
             <div className={styles.profileStats}>
               <span className={styles.stat}>게시물 5</span>
@@ -130,7 +140,11 @@ export default function MyPage(): JSX.Element {
         <div className={styles.profileContent}>
           <div className={styles.profileGrid}>
             {postImages.map((src, idx) => (
-              <div key={idx} className={styles.gridItem} onClick={() => handlePostClick(src)}>
+              <div
+                key={idx}
+                className={styles.gridItem}
+                onClick={() => handlePostClick(src)}
+              >
                 <img src={src} alt={`Post ${idx + 1}`} className={styles.gridImage} />
               </div>
             ))}
@@ -138,7 +152,7 @@ export default function MyPage(): JSX.Element {
         </div>
       </main>
 
-      {/* 분리된 PostModal 사용 */}
+      {/* 모달 */}
       {isModalOpen && selectedPost && (
         <PostModal
           selectedPost={selectedPost}

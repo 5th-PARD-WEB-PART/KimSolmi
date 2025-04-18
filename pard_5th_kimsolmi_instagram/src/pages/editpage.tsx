@@ -67,9 +67,12 @@ export default function MyPage(): JSX.Element {
       </aside>
 
 
-    { /* 제출 부분 수정하기 */}
-      {/* <button type="submit" class="Register-module__k8NHra__submitButton"> 제출 </button>
-      */}
+
+    <button> 
+      제출
+    </button>
+
+    
       
     </div>
   );
