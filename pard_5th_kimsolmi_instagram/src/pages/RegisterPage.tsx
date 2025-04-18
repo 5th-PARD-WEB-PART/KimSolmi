@@ -16,7 +16,7 @@ export default function registerpage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    //모든 필드를 다 입력하게 바꿨습니당~
+    //모든 필드를 다 입력
     if (!phoneOrEmail || !fullName || !userName || !password) {
       alert('모든 필드를 입력해주세요.');
       return;
@@ -105,9 +105,7 @@ export default function registerpage() {
 
           <p className={styles.infoText}>
             저희 서비스를 이용하는 사람이 회원님의 연락처 정보를 Instagram에 업로드했을 수도 있습니다.{' '}
-            <Link href="#">
-  <span style={{ color: '#0095f6' }}>더 알아보기</span>
-</Link>
+            <a href="#" style={{ color: '#0095f6' }}>더 알아보기</a>
           </p>
 
           <button type="submit" className={styles.submitButton}>가입</button>

@@ -1,6 +1,6 @@
 
-<details>
-파드 3차 과제
+<details 파드 3차 과제 >
+
 4월 11일 금요일까지
 
 목표
@@ -20,8 +20,7 @@
 
 <br>
 
-
-파드 4차 과제
+<details 파드 4차 과제 >
 4월 18일 금요일까지 
 
 목표
@@ -43,3 +42,5 @@ RegisterPage에서 입력한 Name을 mypage에서 프로필 이름으로 값 가
 
 파일 경로 : 
 ![alt text](image-7.png)
+
+</details>
