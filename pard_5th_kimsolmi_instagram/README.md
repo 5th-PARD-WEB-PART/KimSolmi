@@ -28,7 +28,8 @@
 - **컴포넌트 최적화**와 폴더 구조 설계를 통해 유지보수 가능한 코드를 작성한다.
 
 추가적으로 챌린지 모드는 아니지만 구현한 사항 
--registerpage에서 데이터를 입력하지 않았을 경우 다음 페이지 mypage로 넘어가지 않게 함 (필수 값 설정)
+-registerpage에서 데이터를 입력 않고 로그인 버튼 누르면 다음 페이지 mypage로 넘어가지 않게 함 (필수 값 설정)
+![alt text](image-8.png)
 
 기존 UserState -> userStore로 상태관리 변경 
 RegisterPage에서 입력한 Name을 mypage에서 프로필 이름으로 값 가지고 옴
